@@ -115,7 +115,7 @@ index_body = {
 client.indices.create(index_name, body=index_body)
 
 
-for doc in docs:
+for doc in docs: 
     doc_id = doc["id"]
     print("Indexing {}".format(doc_id))
     response = client.index(
